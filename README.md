@@ -16,8 +16,9 @@ Latest version of VSCode would be enough.
 
 This extension contributes the following settings:
 
-* `shortcuts.buttons`: define configurable buttons.
-  default:
+* `shortcuts.buttons`: define configurable buttons. Format: `icon, command, tooltip`. Default settings:
+
+  ```json
   [
     "file-binary , workbench.action.tasks.build , Run build task",
     "beaker , workbench.action.tasks.test , Run test task",
@@ -25,8 +26,9 @@ This extension contributes the following settings:
     "telescope , workbench.action.showCommands , Show command palette",
     "bug, workbench.action.debug.start, Launch debug"
   ]
+  ```
 
-Go to preference > workspace settings to change these settings.
+Go to preference > workspace settings to change these settings. The changes will be automatically loaded up after VSCode restart.
 
 ## Known Issues
 
