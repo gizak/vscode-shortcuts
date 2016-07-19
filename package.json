@@ -18,7 +18,7 @@
     "activationEvents": [
         "*"
     ],
-    "icon": "./images/icon.png",
+    "icon": "images/icon.png",
     "main": "./out/src/extension",
     "contributes": {
         "configuration": {
