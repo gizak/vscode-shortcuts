@@ -30,6 +30,8 @@ This extension contributes the following settings:
 
 Go to preference > workspace settings to change these settings. The changes will be automatically loaded up after VSCode restart.
 
+To find all icons list please check the link [octicons.github.com](https://octicons.github.com)
+
 ## Known Issues
 
 Please see: [issues](https://github.com/gizak/vscode-shortcuts/issues).
