@@ -30,7 +30,7 @@ This extension contributes the following settings:
 
 Go to preference > workspace settings to change these settings. The changes will be automatically loaded up after VSCode restart.
 
-To find all icons list please check the link [octicons.github.com](https://octicons.github.com)
+Commands are listed at [vscode doc site](https://code.visualstudio.com/docs/getstarted/keybindings#_default-keyboard-shortcuts). To find all icons list please check the link [octicons.github.com](https://octicons.github.com)
 
 ## Known Issues
 
