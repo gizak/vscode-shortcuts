@@ -27,14 +27,44 @@
             "properties": {
                 "shortcuts.buttons": {
                     "type": "array",
-                    "description": "Setup shortcut buttons. Format: ICON,COMMAND,TOOLTIP",
+                    "description": "Define the desired shortcut buttons to be shown in the status bar. This is either an array of comma-seperated strings with format `icon, command, tooltip`, or an array of objects with the following keys: `icon`, `command`, `tooltip`, `align`, `priority`.",
                     "default": [
-                        "file-binary , workbench.action.tasks.build , Run build task",
-                        "beaker , workbench.action.tasks.test , Run test task",
-                        "terminal , workbench.action.terminal.toggleTerminal , Toggle terminal panel",
-                        "telescope , workbench.action.showCommands , Show command palette",
-                        "bug, workbench.action.debug.start, Launch debug"
+                        {
+                            "icon": "file-binary",
+                            "command": "workbench.action.tasks.build",
+                            "tooltip": "Run build tasks"
+                        },
+                        {
+                            "icon": "beaker",
+                            "command": "workbench.action.tasks.test",
+                            "tooltip": "Run test tasks"
+                        },
+                        {
+                            "icon": "terminal",
+                            "command": "workbench.action.terminal.toggleTerminal",
+                            "tooltip": "Toggle terminal panel"
+                        },
+                        {
+                            "icon": "telescope",
+                            "command": "workbench.action.showCommands",
+                            "tooltip": "Show command palette"
+                        },
+                        {
+                            "icon": "bug",
+                            "command": "workbench.action.debug.start",
+                            "tooltip": "Launch debugger"
+                        }
                     ]
+                },
+                "shortcuts.align": {
+                    "type": "string",
+                    "description": "Default alignment of the shortcut buttons; this can also be overridden per button.",
+                    "default": "left"
+                },
+                "shortcuts.priority": {
+                    "type": ["number", "null"],
+                    "description": "Default order priority of the shortcut buttons; this can also be overridden per button.",
+                    "default": null
                 }
             }
         }
